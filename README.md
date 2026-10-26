@@ -40,7 +40,8 @@ a UI that "looks AI-generated"           sloplint
 ### Constraints
 
 ```text
-languages ∈ { Go, Python, C# }
+contest   ∈ { C++ }
+backend   ∈ { Go, Python, C#, Java }
 storage   = PostgreSQL
 tests     ≥ 1 before every change
 ```
