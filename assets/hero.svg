@@ -18,13 +18,13 @@
 <text class="h" x="380" y="62" text-anchor="middle">H. Hải</text>
 <text class="meta" x="380" y="92" text-anchor="middle">time limit per test: 1 second · memory limit per test: 256 megabytes</text>
 <text class="io" x="380" y="114" text-anchor="middle">input: messy real-world workflows · output: software people can trust</text>
-<g transform="translate(130,140)">
+<g transform="translate(116,140)">
   <rect class="pill" x="0" y="0" width="86" height="24" rx="12"/><text class="tag" x="43" y="16" text-anchor="middle">backend</text>
   <rect class="pill" x="96" y="0" width="98" height="24" rx="12"/><text class="tag" x="145" y="16" text-anchor="middle">llm-agents</text>
   <rect class="pill" x="204" y="0" width="56" height="24" rx="12"/><text class="tag" x="232" y="16" text-anchor="middle">go</text>
   <rect class="pill" x="270" y="0" width="76" height="24" rx="12"/><text class="tag" x="308" y="16" text-anchor="middle">python</text>
   <rect class="pill" x="356" y="0" width="50" height="24" rx="12"/><text class="tag" x="381" y="16" text-anchor="middle">dp</text>
-  <rect class="pill" x="416" y="0" width="84" height="24" rx="12"/><text class="tag" x="458" y="16" text-anchor="middle">*special</text>
+  <rect class="pill" x="416" y="0" width="112" height="24" rx="12"/><text class="tag" x="472" y="16" text-anchor="middle">*first-prize</text>
 </g>
 <text class="ok" x="380" y="192" text-anchor="middle">Verdict: Accepted<tspan class="cur">▌</tspan></text>
 </svg>
