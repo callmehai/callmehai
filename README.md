@@ -27,8 +27,8 @@ I build the backend side of AI products: LLM agents, speech features, and the AP
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go,python,cs,dotnet,ts,react,postgres,redis,mongodb,docker,git,linux&theme=dark" />
-  <img src="https://skillicons.dev/icons?i=go,python,cs,dotnet,ts,react,postgres,redis,mongodb,docker,git,linux&theme=light" alt="Go, Python, C#, .NET, TypeScript, React, PostgreSQL, Redis, MongoDB, Docker, Git, Linux" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
+  <img src="assets/stack-light.svg" alt="Go, Python, C#, .NET, TypeScript, React, PostgreSQL, Redis, MongoDB, Docker, Git, Linux" />
 </picture>
 
 <br><br>
