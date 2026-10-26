@@ -1,62 +1,53 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Trần Việt Hải — Backend Developer @ TrustSoft" width="740" />
-
-<br>
-
-<a href="https://www.linkedin.com/in/hai-tran-viet-54273239a/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/callmehai/sloplint"><img src="https://img.shields.io/badge/sloplint-2F81F7?style=for-the-badge&logo=github&logoColor=white" alt="sloplint" /></a>
+<img src="assets/hero.svg" alt="Problem H. Hải — input: messy real-world workflows, output: software people can trust" width="760" />
 
 </div>
 
-<br>
+### Statement
 
-## 🧭 &nbsp;About Me
+**Hải** is a backend developer at **TrustSoft** and a final-year Software Engineering student at **FPT University**, Hanoi.
+He builds the backend side of AI products: LLM agents, speech features, and the APIs, data and security that keep them correct in production.
 
-I'm a backend developer at **TrustSoft** and a final-year Software Engineering student at **FPT University** in Hanoi.
-I build the backend side of AI products: LLM agents, speech features, and the APIs, data and security that keep them reliable.
+Given a product idea, find the simplest system that still survives real users. Tests first, small steps, fail safely.
 
-- 🔭 **Now:** AI meeting assistants and conversational commerce agents at work
-- 🧩 **Side project:** [sloplint](https://github.com/callmehai/sloplint), a linter that catches the "AI-generated" look in web UIs
-- 🏆 **Background:** competitive programming since high school (Vietnam Olympiad in Informatics, ICPC)
+### Input
 
-<br>
+A product idea, a pile of half-written requirements, and a language model that is confident about everything.
 
-## 🧰 &nbsp;Tech Stack
+### Output
 
-<div align="center">
+A backend that stays correct: clear APIs, sound data models, access control, and tests that say why.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
-  <img src="assets/stack-light.svg" alt="Go, Python, C#, .NET, TypeScript, React, PostgreSQL, Redis, MongoDB, Docker, Git, Linux" />
-</picture>
+### Example
 
-<br><br>
+```text
+input                                    output
+──────────────────────────────────────   ──────────────────────────────────────────
+an assistant that sells over chat        streaming LLM agent + orders + payments
+two hours of meeting audio               transcript → AI-drafted minutes → PDF/DOCX
+a UI that "looks AI-generated"           sloplint
+```
 
-<sub>+ &nbsp;FastAPI &nbsp;·&nbsp; LangGraph &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; NATS &nbsp;·&nbsp; SignalR &nbsp;·&nbsp; TDD &nbsp;·&nbsp; CI/CD</sub>
+### Constraints
 
-</div>
+```text
+1 ≤ languages ≤ { Go, Python, C#, TypeScript, C++ }
+backend      ∈ { net/http, FastAPI, ASP.NET Core, LangGraph }
+data         ∈ { PostgreSQL, Redis, MongoDB, NATS }
+ships with     Docker · CI · TDD
+```
 
-<br>
+### Submissions
 
-## 📌 &nbsp;Things I've Built
+| # | Problem | Verdict | Lang |
+| --- | --- | --- | --- |
+| 1 | [sloplint](https://github.com/callmehai/sloplint): catch the UI patterns that make a front-end look AI-generated | ✅ Accepted | JavaScript |
+| 2 | [Workspace Hub](https://github.com/callmehai/workspace-hub): Gmail, Calendar, Drive & Jira in one Kanban, two-way sync | ✅ Accepted | C#, TypeScript |
+| 3 | [ScanGo](https://github.com/callmehai/scango): snap a product label, get OCR + an AI explanation | ✅ Accepted | JavaScript, C# |
+| 4 | [Template-ICPC](https://github.com/callmehai/Template-ICPC): my contest notebook (HLD, Li Chao, CHT, geometry…) | ✅ Accepted | C++ |
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [sloplint](https://github.com/callmehai/sloplint) | Finds UI patterns that make a front-end look AI-generated and suggests what design systems do instead | JavaScript, Playwright |
-| [Workspace Hub](https://github.com/callmehai/workspace-hub) | Gmail, Calendar, Drive and Jira in one Kanban workspace with two-way sync | ASP.NET 8, React, SQL Server |
-| [ScanGo](https://github.com/callmehai/scango) | Snap a product label, get OCR + an AI explanation or translation | Node.js, .NET 10, Gemini |
-| [Template-ICPC](https://github.com/callmehai/Template-ICPC) | My contest notebook: segment trees, HLD, Li Chao, geometry, number theory | C++ |
+### Note
 
-<br>
-
-## 🐍 &nbsp;Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/callmehai/callmehai/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/callmehai/callmehai/output/snake.svg" alt="Snake eating my contribution graph" />
-</picture>
-
-</div>
+Started out at the Vietnam Olympiad in Informatics, still solves a hard problem for fun.
+Reach him on [LinkedIn](https://www.linkedin.com/in/hai-tran-viet-54273239a/).

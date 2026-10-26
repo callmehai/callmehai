@@ -1,14 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 230" width="740" height="230" role="img" aria-label="Trần Việt Hải — Backend Developer @ TrustSoft">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="760" height="210" role="img" aria-label="Problem H. Hải — time limit per test: 1 second, memory limit per test: 256 megabytes">
 <style>
-  .art  { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:5px; white-space:pre; fill:#c9d1d9; letter-spacing:-0.1px; }
-  .name { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-weight:700; font-size:32px; fill:#3fb950; }
-  .role { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:16px; fill:#8b949e; }
-  .tag  { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:14px; font-style:italic; fill:#8b949e; }
+  .card { fill:#0d1117; stroke:#30363d; }
+  .h    { font-family: Georgia,"Times New Roman",serif; font-size:34px; font-weight:700; fill:#e6edf3; }
+  .meta { font-family: Georgia,"Times New Roman",serif; font-size:15px; fill:#8b949e; }
+  .io   { font-family: Georgia,"Times New Roman",serif; font-size:15px; font-style:italic; fill:#8b949e; }
+  .tag  { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:12px; fill:#7ee787; }
+  .pill { fill:#12261e; stroke:#238636; }
+  .ok   { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:13px; font-weight:700; fill:#3fb950; }
   .cur  { fill:#3fb950; animation: blink 1.1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
-  @media (prefers-color-scheme: light) { .art { fill:#24292f; } .name, .cur { fill:#1a7f37; } .role, .tag { fill:#57606a; } }
+  @media (prefers-color-scheme: light) {
+    .card { fill:#ffffff; stroke:#d0d7de; } .h { fill:#1f2328; } .meta, .io { fill:#59636e; }
+    .tag { fill:#1a7f37; } .pill { fill:#dafbe1; stroke:#4ac26b; } .ok, .cur { fill:#1a7f37; }
+  }
 </style>
-<text class="art" xml:space="preserve" y="8"></text>
-<text class="name" x="24" y="63.0">Trần Việt Hải<tspan class="cur">_</tspan></text>
-<text class="role" x="24" y="107.0">Backend Developer @ TrustSoft</text><text class="role" x="24" y="133.0">Go · Python · .NET · AI agents</text><text class="tag" x="24" y="159.0">Software Engineering @ FPT University</text><text class="tag" x="24" y="185.0">ex-VOI contestant, still loves a hard problem</text>
+<rect class="card" x="1" y="1" width="758" height="208" rx="10"/>
+<text class="h" x="380" y="62" text-anchor="middle">H. Hải</text>
+<text class="meta" x="380" y="92" text-anchor="middle">time limit per test: 1 second · memory limit per test: 256 megabytes</text>
+<text class="io" x="380" y="114" text-anchor="middle">input: messy real-world workflows · output: software people can trust</text>
+<g transform="translate(130,140)">
+  <rect class="pill" x="0" y="0" width="86" height="24" rx="12"/><text class="tag" x="43" y="16" text-anchor="middle">backend</text>
+  <rect class="pill" x="96" y="0" width="98" height="24" rx="12"/><text class="tag" x="145" y="16" text-anchor="middle">llm-agents</text>
+  <rect class="pill" x="204" y="0" width="56" height="24" rx="12"/><text class="tag" x="232" y="16" text-anchor="middle">go</text>
+  <rect class="pill" x="270" y="0" width="76" height="24" rx="12"/><text class="tag" x="308" y="16" text-anchor="middle">python</text>
+  <rect class="pill" x="356" y="0" width="50" height="24" rx="12"/><text class="tag" x="381" y="16" text-anchor="middle">dp</text>
+  <rect class="pill" x="416" y="0" width="84" height="24" rx="12"/><text class="tag" x="458" y="16" text-anchor="middle">*special</text>
+</g>
+<text class="ok" x="380" y="192" text-anchor="middle">Verdict: Accepted<tspan class="cur">▌</tspan></text>
 </svg>
