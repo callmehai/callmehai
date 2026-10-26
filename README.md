@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Problem H. Hải — input: messy real-world workflows, output: software people can trust" width="760" />
+<img src="assets/hero.svg?v=2" alt="Problem H. Hải — input: messy real-world workflows, output: software people can trust" width="760" />
 
 </div>
 
