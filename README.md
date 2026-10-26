@@ -19,6 +19,14 @@ A product idea, a pile of half-written requirements, and a language model that i
 
 A backend that stays correct: clear APIs, sound data models, access control, and tests that say why.
 
+### Interaction
+
+This is an interactive problem: every request talks to the jury and streams its answer back.
+
+<div align="center">
+<img src="assets/flow.svg" alt="Animated request flow: client → api → llm agent → worker → postgres, responses streaming back" width="760" />
+</div>
+
 ### Example
 
 ```text
@@ -32,10 +40,9 @@ a UI that "looks AI-generated"           sloplint
 ### Constraints
 
 ```text
-1 ≤ languages ≤ { Go, Python, C#, TypeScript, C++ }
-backend      ∈ { net/http, FastAPI, ASP.NET Core, LangGraph }
-data         ∈ { PostgreSQL, Redis, MongoDB, NATS }
-ships with     Docker · CI · TDD
+languages ∈ { Go, Python, C# }
+storage   = PostgreSQL
+tests     ≥ 1 before every change
 ```
 
 ### Submissions

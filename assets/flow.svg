@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 760 250" width="760" height="250" role="img" aria-label="Animated request flow: client to api to llm agent to worker to postgres, with responses streaming back">
+<style>
+  .card  { fill:#0d1117; stroke:#30363d; }
+  .node  { fill:#161b22; stroke:#30363d; }
+  .name  { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:13px; font-weight:700; fill:#e6edf3; }
+  .sub   { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:10px; fill:#8b949e; }
+  .lane  { fill:none; stroke:#30363d; stroke-width:2; stroke-dasharray:4 6; animation: flow 1s linear infinite; }
+  .back  { animation-direction: reverse; }
+  .req   { fill:#3fb950; }
+  .res   { fill:#58a6ff; }
+  .log   { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:12px; fill:#8b949e; white-space:pre; opacity:0; animation: show 8s infinite; }
+  .k     { fill:#3fb950; }
+  .v     { fill:#58a6ff; }
+  .glow  { fill:none; stroke:#3fb950; stroke-width:2; opacity:0; animation: ping 3.2s infinite; }
+  @keyframes flow { to { stroke-dashoffset: -20; } }
+  @keyframes show { 0% { opacity:0; } 4% { opacity:1; } 80% { opacity:1; } 88%, 100% { opacity:0; } }
+  @keyframes ping { 0%, 100% { opacity:0; } 8% { opacity:.9; } 25% { opacity:0; } }
+  @media (prefers-color-scheme: light) {
+    .card { fill:#ffffff; stroke:#d0d7de; } .node { fill:#f6f8fa; stroke:#d0d7de; }
+    .name { fill:#1f2328; } .sub, .log { fill:#59636e; } .lane { stroke:#d0d7de; }
+    .req, .k { fill:#1a7f37; } .res, .v { fill:#0969da; } .glow { stroke:#1a7f37; }
+  }
+</style>
+<rect class="card" x="1" y="1" width="758" height="248" rx="10"/>
+
+<path id="fwd" class="lane" d="M80,62 H680"/>
+<path id="bwd" class="lane back" d="M680,86 H80"/>
+
+<circle class="req" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"><mpath xlink:href="#fwd"/></animateMotion></circle>
+<circle class="req" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="1.07s"><mpath xlink:href="#fwd"/></animateMotion></circle>
+<circle class="req" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="2.13s"><mpath xlink:href="#fwd"/></animateMotion></circle>
+<circle class="res" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0.53s"><mpath xlink:href="#bwd"/></animateMotion></circle>
+<circle class="res" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="1.6s"><mpath xlink:href="#bwd"/></animateMotion></circle>
+<circle class="res" r="5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="2.67s"><mpath xlink:href="#bwd"/></animateMotion></circle>
+
+<g>
+  <rect class="node" x="28"  y="44" width="104" height="60" rx="8"/>
+  <rect class="node" x="178" y="44" width="104" height="60" rx="8"/>
+  <rect class="node" x="328" y="44" width="104" height="60" rx="8"/>
+  <rect class="node" x="478" y="44" width="104" height="60" rx="8"/>
+  <rect class="node" x="628" y="44" width="104" height="60" rx="8"/>
+  <rect class="glow" x="28"  y="44" width="104" height="60" rx="8" style="animation-delay:0s"/>
+  <rect class="glow" x="178" y="44" width="104" height="60" rx="8" style="animation-delay:.6s"/>
+  <rect class="glow" x="328" y="44" width="104" height="60" rx="8" style="animation-delay:1.2s"/>
+  <rect class="glow" x="478" y="44" width="104" height="60" rx="8" style="animation-delay:1.8s"/>
+  <rect class="glow" x="628" y="44" width="104" height="60" rx="8" style="animation-delay:2.4s"/>
+  <text class="name" x="80"  y="70" text-anchor="middle">client</text><text class="sub" x="80"  y="88" text-anchor="middle">http · sse</text>
+  <text class="name" x="230" y="70" text-anchor="middle">api</text><text class="sub" x="230" y="88" text-anchor="middle">authz · audit</text>
+  <text class="name" x="380" y="70" text-anchor="middle">llm agent</text><text class="sub" x="380" y="88" text-anchor="middle">tools · stream</text>
+  <text class="name" x="530" y="70" text-anchor="middle">worker</text><text class="sub" x="530" y="88" text-anchor="middle">queue · retry</text>
+  <text class="name" x="680" y="70" text-anchor="middle">postgres</text><text class="sub" x="680" y="88" text-anchor="middle">one tx</text>
+</g>
+
+<text class="log" x="40" y="140" style="animation-delay:0s"><tspan class="k">&gt;</tspan> POST /v1/chat                     <tspan class="v">200  </tspan>stream opened</text>
+<text class="log" x="40" y="162" style="animation-delay:1s"><tspan class="k">&gt;</tspan> agent: tool_call(lookup_order)    <tspan class="v">ok   </tspan>38 ms</text>
+<text class="log" x="40" y="184" style="animation-delay:2s"><tspan class="k">&gt;</tspan> worker: job queued, idempotent    <tspan class="v">ok   </tspan>exactly once</text>
+<text class="log" x="40" y="206" style="animation-delay:3s"><tspan class="k">&gt;</tspan> tx commit: order + audit row      <tspan class="v">ok   </tspan>fail closed</text>
+<text class="log" x="40" y="228" style="animation-delay:4s"><tspan class="k">&gt;</tspan> data: {&quot;verdict&quot;:&quot;Accepted&quot;}      <tspan class="v">200  </tspan>▌</text>
+</svg>
