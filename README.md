@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg?v=3" alt="Problem V. Hải — input: messy real-world workflows, output: software people can trust" width="760" />
+<img src="assets/hero.svg?v=4" alt="Problem V. Hải — input: messy real-world workflows, output: software people can trust" width="760" />
 
 </div>
 
@@ -48,7 +48,16 @@ ships with     Docker · CI · TDD
 | 4 | [Violympic Mini Games](https://github.com/callmehai/violympic-game): real-time quiz games for ~50 players with a live leaderboard | ✅ Accepted | JavaScript |
 | 5 | [Template-ICPC](https://github.com/callmehai/Template-ICPC): my contest notebook (HLD, Li Chao, CHT, geometry…) | ✅ Accepted | C++ |
 
+### Standings
+
+| Contest | Result |
+| --- | --- |
+| [Vietnam Student Olympiad in Informatics 2024](https://www.facebook.com/FPTU.HCM/posts/1049116450591528/), specialized IT division | 🥇 First Prize |
+| ICPC Vietnam Northern Region 2024 | 🥈 Second Prize |
+| International Quant Championship 2024 (WorldQuant) | Top 8 finalist |
+| LG Dream Code Hanoi 2025 | Top 5 |
+
 ### Note
 
-🥇 First Prize, [Vietnam Student Olympiad in Informatics 2024](https://www.facebook.com/FPTU.HCM/posts/1049116450591528/), specialized IT division. Started out at the Vietnam Olympiad in Informatics in high school, still solves a hard problem for fun.
+Started out at the Vietnam Olympiad in Informatics in high school, still solves a hard problem for fun.
 Reach him on [LinkedIn](https://www.linkedin.com/in/hai-tran-viet-54273239a/).
